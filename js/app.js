@@ -2,6 +2,7 @@ console.log ("woks!")
 
 let bottone = document.getElementById("bottone");
 let refresh = document.getElementById("refresh");
+let fizzBox = document.getElementById("fizzbox");
 
 bottone.addEventListener ( "click",
 
@@ -15,11 +16,12 @@ bottone.addEventListener ( "click",
             } else if (i % 5 === 0) {
                 console.log(i, 'Buzz')
             } 
-        }    
-        
+
+            fizzBox.innerHTML = i
+        }   
+
     }
     
-
 )
 
 refresh.addEventListener ( "click",
@@ -27,4 +29,5 @@ refresh.addEventListener ( "click",
         window.location.reload(true)
     }
 )
+
 
